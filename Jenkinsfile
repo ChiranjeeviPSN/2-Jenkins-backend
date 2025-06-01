@@ -36,7 +36,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 sh """
-        		docker build -t joindevops/backend:${appVersion} .
+        		docker build -t test .
 		        docker images
 		        """
             }
